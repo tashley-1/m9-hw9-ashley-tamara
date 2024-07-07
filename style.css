@@ -131,3 +131,52 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+@media screen and (max-width: 500px)
+/* Fix the header links to match the mockups */
+header {
+  padding: 24px 0;
+}
+
+  header a {
+      font-size: 1rem;
+      padding: 8px;
+      display: block;
+      text-align: center;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav > a:not(:first-of-type) {
+      margin-left: 0;
+      margin-top: 8px;
+  }
+
+  nav > a.logo {
+      margin-bottom: 16px;
+  }
+
+    /* Fix the article element's padding to allow text to be readable on smaller screens */
+  main article {
+      padding: 24px 16px;
+  }
+
+    /* Fix the hero image's text so that it is not overly large on smaller devices */
+  section.hero > .call-to-action {
+      font-size: 1.5rem;
+      padding: 0 16px;
+  }
+
+    /* Center the image embedded in the article's text */
+  main > article img {
+      float: none;
+      display: block;
+      margin: 0 auto 24px;
+  }
+
+    /* Decrease the bottom margin on different sections of the page */
+  main > section, main > article {
+      margin-bottom: 48px;
+  }
